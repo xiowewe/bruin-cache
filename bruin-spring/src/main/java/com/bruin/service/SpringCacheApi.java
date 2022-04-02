@@ -9,4 +9,10 @@ import com.bruin.model.Book;
 public interface SpringCacheApi {
 
     Book getByIsbn(String isbn);
+
+    void save(Book book);
+
+    void remove(String isbn);
+
+    Book mixture(String isbn);
 }
